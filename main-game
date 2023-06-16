@@ -7,7 +7,7 @@
 # License: MIT
 # ## ################################################################
 import sys
-import random
+from random import randint
 
 
 def welcome_game_art():
@@ -22,13 +22,6 @@ def welcome_game_art():
  |___/                                                                              
 """)
 # end welcome_game
-
-
-def random_number():
-    aux = list(range(1, 101))
-    number_function = random.choice(aux)
-    return number_function
-# end random_number
 
 
 def difficulty():
@@ -47,8 +40,8 @@ def difficulty():
 def main(argv):
     welcome_game_art()
     print("Welcome to the number guessing game!\n")
-    number = random_number()
     print("I'm thinking of a number between 1 and 100\n")
+    number = randint(1, 100)
     tries = difficulty()
 
     print(number)
