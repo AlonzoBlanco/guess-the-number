@@ -1,4 +1,3 @@
-# guess-the-number
 # Guess the Number Game
 
 This is a command-line game implemented in Python where the player has to guess a randomly generated number within a certain range.
